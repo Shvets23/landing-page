@@ -26,6 +26,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	outline: none;
 }
 html {
 	font-size: 15px;
@@ -194,6 +195,10 @@ button {
 }
 /* Default classes end */
 /* Default component start */
+.small-section {
+	padding: 70px 0;
+}
+
 .default-section {
 	padding: 135px 0;
 }
@@ -314,6 +319,9 @@ blockquote div {
 .services-tab ul li a span:last-child {
 	margin-top: 30px;
 }
+.default-section.services .row {
+	height: 160px;
+}
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper .default-text {
@@ -336,11 +344,63 @@ blockquote div {
 	
 }
 .title.title-white.title-light {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 
 }
 /* ===== Lets talk end ===== */
-/* Custom style end */
+/* ===== Portfolio start ===== */
+.portfolio-tab ul li.ui-state-active a {
+	color: black !important;
+}
+.portfolio-tab li a {
+	font-size: 14px;
+	color: rgba(17, 17, 17, .5);
+	text-transform: uppercase;
+	font-family: 'dosisregular';
+	letter-spacing: 0.4em;
+}
+.portfolio-description {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 15px;
+	color: #777777;
+	max-width: 755px;
+	margin: 0 auto;
+}
+.portfolio-tab ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.portfolio-tab ul {
+	width: 585px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 50px;
+	margin-top: 80px;
+}
+
+
+.portfolio-tab img {
+	width: 100%;
+}
+.portfolio-tab .col-4 {
+	padding: 3.5px;
+}
+/*.portfolio-tab .col-4 + .col-4 {
+	padding-left: 5px;
+}*/
+.portfolio {
+	padding-bottom: 0;
+}
+.portfolio-tab img{
+	-webkit-filter: grayscale(100%);
+	
+}
+.portfolio-tab img:hover {
+	-webkit-filter: grayscale(0%);
+}
+
+/* ===== Portfolio end ===== */
 /* ===== Why choose us start ===== */
 .advantage-icon {
 	font-size: 48px;
@@ -348,7 +408,7 @@ blockquote div {
 	padding-bottom: 30px;
 }
 .advantage-title {
-	font-family: 'dosisregular';
+	font-family: 'dosisregular', sans-serif;
 	padding-bottom: 30px;
 	letter-spacing: 0.4em;
 	font-size: 14px;
@@ -357,6 +417,71 @@ blockquote div {
 	font-weight: normal;
 }
 /* ===== Why choose us end ===== */
+/* ===== Reviews start ===== */
+.review-wrapper .icon-quote {
+	font-size: 32px;
+	color: white;
+	padding-bottom: 20px;
+}
+.review-wrapper p {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 18px;
+	color: rgba(255, 255, 255, .75);
+	margin-bottom: 25px;
+}
+.review-wrapper .review-author {
+	font-family: 'open_sansregular';
+	font-size: 11px;
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, .3);
+	text-transform: uppercase;
+}
+.reviews-carousel {
+	padding: 140px 0;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+}
+.slick-arrow.slick-next {
+	right: 0;
+}
+.slick-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 0;
+}
+.slick-dots li {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li button {
+	color: transparent;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	background-color: #ccc;
+}
+.slick-dots li.slick-active button {
+	background-color: transparent;
+	width: 9px;
+	height: 9px;
+}
+
+/* ===== Reviews end ===== */
+/* Custom style end */
+
 
 
 
