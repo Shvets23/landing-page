@@ -458,6 +458,10 @@ border: 1px solid white;
 	border-radius: 2px;
 	font-size: .8rem;
 	transform: rotate(45deg);
+	height: 23px;
+}
+.fas.fa-chevron-down {
+	margin-top: 5px;
 }
 .rhomb-icon > * {
 	transform: rotate(-45deg);
@@ -1269,6 +1273,24 @@ left: 15px;
 }
 /* ===== Footer end ===== */
 /* Custom style end */
+/* button to top */
+#toTop {
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:20px; /* отступ кнопки от нижнего края страницы*/
+	right:20px;
+	cursor:pointer;
+	display:none;
+	color:#333;
+	font-family:verdana;
+	font-size:35px;
+	}
 
 
 
